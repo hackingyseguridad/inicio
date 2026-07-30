@@ -22,6 +22,9 @@ cp apagar /sbin/
 echo "Instalando ... "
 chmod 777 *.sh
 setxkbmap es sundeadkeys
+
+sudo locale-gen es_ES.UTF-8
+
 update-locale LANG=es_ES.UTF-8 
 localectl set-locale LANG=es_ES.UTF-8
 localectl set-locale LC_TIME=es_ES.UTF-8
