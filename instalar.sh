@@ -22,11 +22,10 @@ cp apagar /sbin/
 echo "Instalando ... "
 chmod 777 *.sh
 setxkbmap es sundeadkeys
-
+echo
+# locale-gen es_ES.UTF-8
 sudo locale-gen es_ES.UTF-8
 sudo localedef -i es_ES -f UTF-8 es_ES.UTF-8
-
-locale-gen es_ES.UTF-8
 cp keyboard /etc/default/
 cp locale /etc/default/
 echo "ñ"
