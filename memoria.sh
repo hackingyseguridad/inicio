@@ -3,12 +3,13 @@
 # Compatible con Bash 1.0.x
 # Antonio Taboada -hackingyseguridad.com
 
+echo
 echo "Total memoria RAM: "
-grep "^MemTotal:" /proc/meminfo
+grep "^Total memoria RAM:" /proc/meminfo
 
 echo ""
 echo "Uso de memoria (free -m):"
-free -m 2>/dev/null || echo "free no disponible"
+free -m 2>/dev/null
 
 echo ""
 echo "Resumen vmstat:"
