@@ -5,7 +5,7 @@
 
 echo
 echo "Total memoria RAM: "
-grep "^Total memoria RAM:" /proc/meminfo
+grep "^MemTotal:" /proc/meminfo
 
 echo ""
 echo "Uso de memoria (free -m):"
