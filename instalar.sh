@@ -13,6 +13,8 @@ timedatectl set-local-rtc 1
 timedatectl
 echo
 echo "Copiando ficheros ..."
+chmod 777 chrome
+cp chrome /sbin/
 chmod 777 apaga
 cp apaga /sbin/
 chmod 777 reinicia
